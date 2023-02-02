@@ -2,6 +2,7 @@
 import React from "react";
 import ReactDOM  from "react-dom";
 import "../pages/home/styles/style.css";
+import Heading from "./Heading";
 
 function Home(){
   const name = "Mubarak";
@@ -11,6 +12,7 @@ function Home(){
   return (
     ReactDOM.render(
       <div>
+        <Heading />
       <h1 className="heading" contentEditable = "true" spellCheck= "false">Hello {name}!</h1>
       <p>Your lucky number is {num}</p>
       <p>Copyright {year}</p>
